@@ -37,26 +37,26 @@ addPerson();
 //questions to use to add a manager card
 
 function addManager() {
-    const managerInfo = [
-        {
+    const managerInfo = [{
             type: "input",
-            message: "What is your name? ",
             name: "name",
+            message: "What is your name? ",           
         },
         {
             type: "input",
-            message: "What is your ID? ",
             name: "id",
+            message: "What is your ID? ",           
         },
         {
             type: "input",
-            message: "What is your email? ",
             name: "email",
+            message: "What is your email? ",            
         },
         {
             type: "input",
-            message: "What is your office number? ",
             name: "officeNumber",
+            message: "What is your office number? ",
+            
         },
     ];
     inquirer.prompt(managerInfo)
@@ -64,7 +64,7 @@ function addManager() {
             const manager = new Manager(responses.name, responses.id, responses.email, responses.officeNumber)
             team.push(manager);
             keepGoing();
-        })
+        });
 };
 
 //questions to use to add an engineer card
@@ -72,23 +72,23 @@ function addManager() {
 function addEngineer() {
     const engineerInfo = [{
         type: "input",
-        message: "What is your name? ",
         name: "name",
+        message: "What is your name? ", 
     },
     {
         type: "input",
-        message: "What is your ID? ",
         name: "id",
+        message: "What is your ID? ", 
     },
     {
         type: "input",
-        message: "What is your email? ",
         name: "email",
+        message: "What is your email? ", 
     },
     {
         type: "input",
-        message: "What is your Github username? ",
         name: "github",
+        message: "What is your Github username? ",
     },
     ];
     inquirer.prompt(engineerInfo)
@@ -96,7 +96,7 @@ function addEngineer() {
             const engineer = new Engineer(responses.name, responses.id, responses.email, responses.github)
             team.push(engineer);
             keepGoing();
-        })
+        });
 };
 
 //questions to use to add an intern card
@@ -104,23 +104,23 @@ function addEngineer() {
 function addIntern() {
     const internInfo = [{
         type: "input",
-        message: "What is your name? ",
         name: "name",
+        message: "What is your name? ",       
     },
     {
         type: "input",
-        message: "What is your ID? ",
         name: "id",
+        message: "What is your ID? ",       
     },
     {
         type: "input",
-        message: "What is your email? ",
         name: "email",
+        message: "What is your email? ",        
     },
     {
         type: "input",
-        message: "What is your school name? ",
         name: "school",
+        message: "What is your school name? ",       
     },
     ];
     inquirer.prompt(internInfo)
@@ -149,8 +149,8 @@ function myTeam() {
 function keepGoing() {
     const keepGoing = [{
         type: "confirm",
-        message: "Do you want to add another? ",
         name: "another",
+        message: "Do you want to add another? ",       
     },
     ];
     inquirer.prompt(keepGoing)
