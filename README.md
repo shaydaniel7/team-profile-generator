@@ -24,7 +24,11 @@ This application was tested with Jest.
 ## Information
 If you have any questions about this project, you can open an issue or contact me directly at shay@shaydaniel.com. You can find more of my work on Github at [shaydaniel7](https://github.com/shaydaniel7/).  [Here](https://github.com/shaydaniel7/team.profile.generator "Link to github repository") is the github repository for this project.
 
-## Screenshot
+## Screenshots
+
+<img width="910" alt="screenshot1" src="https://user-images.githubusercontent.com/67557233/95790006-70f8a000-0c93-11eb-8dcd-23bf4f29fb64.png">
+<img width="976" alt="screenshot2" src="https://user-images.githubusercontent.com/67557233/95790021-7c4bcb80-0c93-11eb-9e22-4f9b9835107a.png">
+
 
 
 
